@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+}
+
+.mlb * {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+
+/**
+ * Bootstrap modifications
+ */
+.mlb .list-group-item,
+.mlb .well,
+.mlb .panel,
+.mlb .panel-body,
+.mlb .panel-heading,
+.mlb form .row:first-child .floating-label-form-group,
+.mlb .form-group {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.mlb input[type="email"],
+.mlb input[type="password"],
+.mlb input[type="text"],
+.mlb select {
+    margin-bottom: 5px;
+    border-bottom: 1px #dedede solid;
+}
+
+.mlb .panel-heading {
+        margin-bottom: -16px
+}
+
+.mlb .navbar a:after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    transition: all 350ms ease-in-out;
+    transform: translate3d(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0, 0, 0);
+}
+
+.mlb .navbar a.active:after {
+    width: 100%;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    transform: rotate3d(250px,250px,250px,-120deg)
+   scale3d(0.5, 0.5, 0.5);
+
+}
+
+
+/**
+ * Custom styles
+ */
+hr.large {
+    margin: 20px;
+    border-top: 1px rgb(220, 220, 220) solid;
+}
+
+.mlb .text-shadow {
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 0.65);
+}
+
+.mlb .logo {
+    max-width: 120px;
+}
+
+
+.mlb .intro-header-login,
+.mlb .intro-header-register,
+.mlb .intro-header-post,
+.mlb .intro-header {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.mlb .intro-header {
+    background-image: url(../img/magicleap.jpg);
+}
+
+.mlb .intro-header.intro-header-post {
+    background-position: 50% -40%;
+    background-image: url(../img/magic-leap-kid.jpg);
+}
+ 
+.mlb .intro-header.intro-header-register {
+    background-position: 50% -80%;
+    background-image: url(../img/magic-leap-ballet-dancer.jpg);
+}
+
+.mlb .intro-header.intro-header-login {
+    background-position: 100% 0%;
+    background-image: url(../img/magic-leap-animal-hand.png);
+} 
+
+.mlb .intro-header-login .site-heading,
+.mlb .intro-header-register .site-heading,
+.mlb .intro-header-post .site-heading {
+     padding: 120px 0 40px 0;    
+}
+
+.mlb .site-heading,
+.mlb .small-site-heading {
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.mlb-transparent-gradient {
+    background-image: url(../img/magic-leap-colors.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.mlb-post .post-title {
+    margin: 60px initial;
+    position: relative;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.mlb .post-subtitle {
+    margin: 0 0 10px;
+    font-weight: 300;
+}
